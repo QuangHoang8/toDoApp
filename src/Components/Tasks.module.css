@@ -1,0 +1,65 @@
+.list {
+  height: 60px;
+  justify-content: space-between;
+  margin-top: 8px;
+  align-items: center;
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+}
+.listItems {
+  margin-left: 30px;
+  display: flex;
+}
+.content {
+  margin-left: 40px;
+  font-size: 20px;
+  color: black;
+}
+.checkboxFour {
+  margin-left: 10px;
+}
+
+.checkboxFourInput {
+  display: none;
+}
+.star {
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+}
+.imgStar {
+  max-width: 100%;
+}
+.checkboxFourlabel {
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-radius: 100px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  background: white;
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.checkboxFour label:after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 5px;
+  background: transparent;
+  top: 5px;
+  left: 5px;
+  border: 3px solid white;
+  border-top: none;
+  border-right: none;
+  display: none;
+  transform: rotate(-45deg);
+}
+.checkboxFour input[type="checkbox"]:checked + label:after {
+  display: block;
+}
+.checkboxFour input[type="checkbox"]:checked + label {
+  background: #5d70bd;
+}
